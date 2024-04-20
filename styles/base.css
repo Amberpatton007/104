@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: "Arimo";
+    background-image: url(imgs/yellow-water-drop-background.jpg);
+    background-position: center;
+    background-repeat:  repeat;
+    padding:60px;
+
+}
+
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: underline;
+        color:goldenrod;
+}
+
+
+/*utlities*/
+.site-header{
+    display: flex;
+    background-image: url(../imgs/Fur\ Babies\ Beauty\ Salon\ header.png);
+    background-position: center center;
+    flex-direction: column;
+    justify-content: top;
+    background-size: cover;
+    height: 500px;
+    color: goldenrod;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+.container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid goldenrod;
+}
+
+.content{
+    height: 150px;
+    width: 150px;
+    float: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.wrapper{
+    width: 500x;
+    height: 275px;
+    
+}
+
+.wrapper2{
+    width: 500x;
+    height: 800px;
+    display: block;
+
+}
+
+.flex-container-table{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    padding: 1%;
+    margin: 20px;
+}
+
+@font-face{
+    font-family: VagueRetro;
+    src: url(../Fonts/vaguely-retro-font/VagueRetro.ttf);
+}
+
+
+h1, h2, h3, h4{
+    font-family: VagueRetro;
+    color: rgb(149, 113, 21);
+    text-decoration: underline;
+}
+
+li{
+    font-family: VagueRetro;
+    color:rgb(149, 113, 21);
+    text-decoration: underline;
+
+}
+
+
+
+/*footer*/
+
+.site-footer{
+    background-image: url();
+    background-position: center center;
+    background-size: cover;
+    height: 80px;
+    color: white;
+    text-align: center;
+}

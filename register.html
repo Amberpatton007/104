@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles/base.css">
+<link rel="stylesheet" href="styles/register.css">
+
+<style>
+    body{
+        background-image: url(imgs/yellow-water-drop-background.jpg);
+
+    }
+</style>
+
+    <title>Document</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header-container">
+            <h1>Fur Baby Beauty Salon</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="register.html">Register</a>
+            </nav>               
+        </div>
+
+    </header>
+    <main>
+
+        <h2 class="flex-container-table wrapper">Check out the list of our services below</h2>
+    
+        <div>
+
+            <h2 class="flex-container-table">Service Options</h2>
+
+        <div class="flex-container-table">
+
+            <div class="columns">
+                <ul class="demo">
+                    <li class="h3">Hair Cut</li>
+                    <p>Basic Haircut for your fur baby</p>
+                    <p>$75</p>
+                </ul>
+            </div>
+            
+            <div class="columns">
+                <ul class="demo">
+                    <li class="h3">Bath</li>
+                    <p>Wash, blowdry, and haircut or style</p>
+                    <p>$150</p>
+                </ul>
+            </div>
+            
+            <div class="columns">
+                <ul class="demo">
+                    <li class="h3">Style</li>
+                    <p>Something special for your fur baby. Give them the look of a lion, or a heart on their bum!</p>
+                    <p>$90</p>
+                </ul>
+            </div>
+            
+            <div class="columns">
+                <ul class="demo">
+                    <li class="h3">Color</li>
+                    <p>Liven up your fur baby with some fun, petsafe colors that'll be sure to attract some attention!</p>
+                    <p>$250</p>
+                </ul>
+            </div>
+            
+            <div class="columns">
+                <ul class="demo">
+                    <li class="h3">De-Matting</li>
+                    <p>Sometimes your furbaby needs a healthy detangling. We're always here to help.</p>
+                    <p>$150 - $300</p>
+                </ul>
+            </div>
+            
+            <div class="columns">
+                <ul class="demo">
+                    <li class="h3">Nail Trimming</li>
+                    <p>We've got the magic touch to make sure your pets nails are trimmed. You can even add some polish!</p>
+                    <p>$20</p>
+                </ul>
+            </div>
+        </div>
+
+
+    <h3 class="flex-container-table">Tell us about your fur baby</h3>
+    
+    <div class="form label">
+        <div>
+            <label>Name:</label>
+            <input type="text" id="txtName">
+        </div>
+        <div>
+            <label>Age:</label>
+            <input type="text" id="txtAge">
+        </div>
+        <div>
+            <label>Gender:</label>
+            <input type="text" id="txtGender">
+        </div>
+        <div>
+            <label>Breed:</label>
+            <input type="text" id="txtBreed">
+        </div>
+        <div>
+            <label>Service:</label>
+            <select id="textService">
+                <option value="hairCut">Hair Cut</option>
+                <option value="bath">Bath</option>
+                <option value="style">Style</option>
+                <option value="color">Color</option>
+                <option value="de-matting">De-Matting</option>
+                <option value="nailTrimming">Nail Trimming</option>
+            </select>
+        </div>
+
+    </div>
+
+        <button onclick="register()">Register</button>
+        
+    <div id="pets"></div>
+
+
+        </div>
+    </main>
+
+
+    <script src="./scripts/register.js"></script>
+    <script src="./scripts/display.js"></script>
+
+</body>
+</html>

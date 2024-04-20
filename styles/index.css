@@ -1,0 +1,33 @@
+/*body*/
+
+
+/*header*/
+
+.site-header{
+    display: flex;
+    background-image: url(../imgs/Fur\ Babies\ Beauty\ Salon\ header.png);
+    background-position: center center;
+    flex-direction: column;
+    justify-content: top;
+    background-size: cover;
+    height: 500px;
+    color: goldenrod;
+    text-align: center;
+    text-decoration: underline;
+}
+
+@font-face{
+    font-family: VagueRetro;
+    src: url(../Fonts/vaguely-retro-font/VagueRetro.ttf);
+}
+
+
+h1{
+    font-family: VagueRetro;
+}
+
+.header-text{
+    width: auto;
+    padding-bottom: 100px;
+
+}

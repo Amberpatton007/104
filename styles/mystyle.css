@@ -1,0 +1,173 @@
+/*global*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{font-family: Arial;}
+img{max-width: 100%;}
+p{
+    line-height: 2;
+}
+h2{text-align: center;}
+
+a{text-decoration: none;}
+
+
+
+/*utilities*/
+.btn{
+    display: inline-block;
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.btn1{background-color: black;}
+
+.btn2{
+    background-color: brown;
+
+}
+
+.btn3{
+    background-color: rgb(142, 96, 4);
+}
+
+
+.container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.flex-main-container{
+    display: flex;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px; 
+}
+
+
+/*header*/
+.site-header{
+    background-image: url(img/banner.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+    color: white;
+    text-align: center;
+}
+
+.menu a{
+    color: white;
+    margin-right: 20px;
+}
+
+.menub{
+    color: rgb(255, 255, 255);
+    margin-right: 20px;
+    background-color: rgb(80, 33, 2);
+}
+
+.flex-container-menu{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;/*horizontal*/
+    height: 100px;/*vertical*/
+
+}
+.header-secondary{
+    background-color: black;
+    color: white
+}
+
+.header-tertiary{
+background-position: center center;
+background-size: cover;
+height: 180px;
+color: rgb(255, 255, 255);
+text-align: center;
+}
+
+.header-text{
+    background-position: center; 
+    background-color:rgb(80, 33, 2);
+    width: auto;
+}
+
+
+
+
+
+.box{
+    width: 200px;
+    height: 100px;
+    border: 1px solid gold;
+    padding: 10px;
+    margin: 10px;
+}
+/*courses*/
+.course-container{ width: 30%;}
+
+.course-item{
+    border-bottom: 1px;
+}
+
+/*footer*/
+.site-footer{
+    background-color: black;
+    background-position: center center;
+    background-size: cover;
+    height: 80px;
+    color: white;
+    text-align: center;
+}
+
+/*contact*/
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+.form-img{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:700px;
+}
+
+.rcorners1{
+    border-radius: 25px;
+    padding: 20px;
+    width: auto;
+    height: 150px;
+}
+
+.form{
+    background-color: white;
+    margin-top: -30px;
+    padding: 20px;
+}
+.input-container{
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.input-container label{
+    display: inline-block;
+    width: 80px;
+    text-align: left;
+    padding:10px;
+}
+.input-container input,
+.input-container textarea{
+    width:70%;
+    padding:3px;
+}
