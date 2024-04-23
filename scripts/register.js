@@ -28,6 +28,7 @@ function isValid(pet){
         alert("please add pet name");
     }
 
+
     if(pet.service==""){
         validation=false;
         alert("please choose a service")
@@ -43,19 +44,24 @@ function register(){
     let inputBreed = document.getElementById("txtBreed").value;
     let inputService = document.getElementById("txtService").value;
     
-    let newPet = new Pet(inputName,inputAge,inputGender,inputBreed,inputService);
+    let newPet = new Pet(inputName,inputAge,inputGender,inputBreed);
     
     if(isValid(newPet)==true){
         petSalon.pets.push(newPet);
-        console.log(newPet);
+        console.log(petSalon.pets); //displaying the pets array 
+        displayRow();
     }
 }
 
+function deletePet(i){
+
+}
 
 function init(){
     let pet1 = new Pet("Rogue", 2, "female","Maltipoo", "bath");
     petSalon.pets.push(pet1);
     console.log(pet1);
+    displayRow();
 }
 
 window.onload=init; //wait to render the HTML, then load the init//

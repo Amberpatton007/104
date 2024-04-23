@@ -17,6 +17,11 @@
 
 
 /*form*/
+.form-container{
+    background-color: rgb(255, 221, 99);
+    border-radius: 5px;
+    padding: 10px;
+}
 .form{
     background-color: rgb(255, 221, 99);
     inline-size: fit-content;
@@ -27,15 +32,15 @@
     margin-bottom: 10px;
     padding: 10px;
 }
-.input-container-label{
+.input-container label{
     display: inline-block;
     width: 80px;
-    text-align: left;
-    padding:100px;
+    text-align: right;
+
 }
 
 .input-container input,
-.input-container textarea{
+.input-container select{
     width:70%;
     padding:3px;
 }
@@ -65,4 +70,13 @@ label {
     float: left;
     width: 33.3%;
     padding: 8px;
+}
+
+.fa-trash{
+    color: brown;
+    font-size: 12px;
+    border: 1px solid, rgb(150, 150, 150);
+    padding: 3px;
+    border-radius: 50%;
+
 }
