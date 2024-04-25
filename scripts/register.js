@@ -11,12 +11,13 @@ let petSalon = {
 }
 
 //constructor i.e. Bluprint//
-function Pet(name,age,gender,breed,service){
+function Pet(name,age,gender,breed,typeofpet,service){
     //attributes-parameter//
     this.name=name;
     this.age=age;
     this.gender=gender;
     this.breed=breed;
+    this.typeofpet=typeofpet;
     this.service=service;
 }
 
@@ -42,25 +43,39 @@ function register(){
     let inputAge = document.getElementById("txtAge").value;
     let inputGender = document.getElementById("txtGender").value;
     let inputBreed = document.getElementById("txtBreed").value;
+    let inputtypeofpet = document.getElementById("txttypeofpet").value;
     let inputService = document.getElementById("txtService").value;
     
-    let newPet = new Pet(inputName,inputAge,inputGender,inputBreed);
+    let newPet = new Pet(inputName,inputAge,inputGender,inputBreed,inputtypeofpet,inputService);
     
     if(isValid(newPet)==true){
-        petSalon.pets.push(newPet);
-        console.log(petSalon.pets); //displaying the pets array 
+        petSalon.pets.push(newPet); 
         displayRow();
+        displayServiceCount();
+        showNotificiation("Successfully registered", "success");
+        console.log(petSalon.pets); //displaying the pets array
     }
 }
 
-function deletePet(i){
+function deletePet(petID){
+    console.log("Deleting pet ..." + petID);
+    document.getElementById(petID).remove();
+    petSalon.pets.splice(petID, 1);
+    displayRow();
+    displayServiceCount();
 
 }
 
 function init(){
-    let pet1 = new Pet("Rogue", 2, "female","Maltipoo", "bath");
-    petSalon.pets.push(pet1);
-    console.log(pet1);
+    let pet1 = new Pet("Rogue", 2, "female","Maltipoo","dog","bath");
+    let pet2 = new Pet("Storm",3,"female","german shephard/beagle mix","dog","nailtrimming");
+    let pet3 = new Pet("Lucky", 4,"male","Angora","bunny","bath groom");
+    let pet4 = new Pet("Sheba",13,"female","tabby","cat","de-matting bath style");
+    petSalon.pets.push(pet1,pet2,pet3,pet4);
+
+
+    //displayCard()
+    displayRow();
     displayRow();
 }
 

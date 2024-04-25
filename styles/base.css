@@ -17,7 +17,8 @@ img{
 }
 a{
     text-decoration: underline;
-        color:goldenrod;
+    padding-bottom: 10px;
+        color:rgb(46, 27, 6);
 }
 
 
@@ -30,8 +31,9 @@ a{
     justify-content: top;
     background-size: cover;
     height: 500px;
-    color: goldenrod;
+    color: rgb(46, 27, 6);
     text-align: center;
+    margin-bottom: 10px;
     text-decoration: underline;
 }
 
@@ -40,7 +42,7 @@ a{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    border: solid goldenrod;
+    border: solid rgb(46, 27, 6);
 }
 
 .content{
@@ -81,26 +83,54 @@ a{
 
 h1, h2, h3, h4{
     font-family: VagueRetro;
-    color: rgb(149, 113, 21);
+    color: rgb(46, 27, 6);
     text-decoration: underline;
 }
 
 li{
     font-family: VagueRetro;
-    color:rgb(149, 113, 21);
+    color:rgb(46, 27, 6);
     text-decoration: underline;
 
 }
 
+.notification{
+    display: none;
+    position:fixed;
+    top: 10px;
+    right: 0;
+    width: 300px;
+    background-color:rgb(46, 27, 6);
+    color:lightgoldenrodyellow;
+    padding: 10px;
+}
+
+#closeNotification{
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+
+
+}
+
+#notificationText{
+    margin: 0;
+
+}
+
+.success{
+    background-color: goldenrod;
+}
 
 
 /*footer*/
 
 .site-footer{
-    background-image: url();
+    background-color:rgb(46, 27, 6);
     background-position: center center;
     background-size: cover;
     height: 80px;
-    color: white;
+    color: goldenrod;
     text-align: center;
 }
