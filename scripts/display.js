@@ -9,14 +9,14 @@ for(let i=0;i<petSalon.pets.length;i++){
     card+=`
     <div class="pet">
     <p>${pet.name}</p>
-    <p>${pet.services}</p>
+    <p>${pet.service}</p>
     </div>`;
 
 }
     //HTML template for the cards
 
 //Insert the cards into HTML div
-    DIV.innerHTML= "<p> This is a test </p>";
+    DIV.innerHTML= card;
 }
 
 function displayRow(){
@@ -32,7 +32,9 @@ function displayRow(){
                 <td>${pet.breed}</td>
                 <td>${pet.typeofpet}</td>
                 <td>${pet.service}</td>
-                    <button onclick="deletePet(${i});"<i class= "fa-solid fa-trash"></i></button></td>`;
+                <td>
+                <button onclick="deletePet(${i});"<i class= "fa-solid fa-trash"></i></button>
+                </td>`;
 
         }
         TABLE.innerHTML=tr;
@@ -64,22 +66,21 @@ function displayServiceCount(){
         if(pet.service.toLowerCase()=="styles"){
             styles++;
         }
-        if(pet.service.toLowerCase()=="color"){
+        if(pet.service.toLowerCase()=="colors"){
             color++;
         }
-        if(pet.service.toLowerCase()=="dematting"){
+        if(pet.service.toLowerCase()=="demattings"){
             dematting++;
         }
         if(pet.service.toLowerCase()=="nailtrimmings"){
             nailtrimmings++;
         }
         
+    }
         document.getElementById("totalhaircuts").innerHTML=haircuts;
         document.getElementById("totalbaths").innerHTML=baths;
         document.getElementById("totalstyles").innerHTML=styles;
-        document.getElementById("totalcolor").innerHTML=color;
-        document.getElementById("totaldematting").innerHTML=dematting;
+        document.getElementById("totalcolors").innerHTML=color;
+        document.getElementById("totaldemattings").innerHTML=dematting;
         document.getElementById("totalnailtrimmings").innerHTML=nailtrimmings;
-    }
-
 }

@@ -23,16 +23,15 @@ function Pet(name,age,gender,breed,typeofpet,service){
 
 function isValid(pet){
     let validation=true; //we are fine
-
     if(pet.name==""){
         validation=false;
-        alert("please add pet name");
+        showNotification("please add pet name");
     }
 
 
     if(pet.service==""){
         validation=false;
-        alert("please choose a service")
+        showNotification("please choose a service")
     }
 
     return validation; //returning the result of the validation
@@ -51,8 +50,8 @@ function register(){
     if(isValid(newPet)==true){
         petSalon.pets.push(newPet); 
         displayRow();
-        displayServiceCount();
-        showNotificiation("Successfully registered", "success");
+        //displayServiceCount();
+        //showNotificiation("Successfully registered", "Success");
         console.log(petSalon.pets); //displaying the pets array
     }
 }
@@ -63,20 +62,21 @@ function deletePet(petID){
     petSalon.pets.splice(petID, 1);
     displayRow();
     displayServiceCount();
+    showNotification("The pet has been deleted", "Error");
 
 }
 
 function init(){
-    let pet1 = new Pet("Rogue", 2, "female","Maltipoo","dog","bath");
-    let pet2 = new Pet("Storm",3,"female","german shephard/beagle mix","dog","nailtrimming");
-    let pet3 = new Pet("Lucky", 4,"male","Angora","bunny","bath groom");
-    let pet4 = new Pet("Sheba",13,"female","tabby","cat","de-matting bath style");
+    let pet1 = new Pet("Rogue", 2, "female","Maltipoo","dog","baths");
+    let pet2 = new Pet("Storm",3,"female","german shephard/beagle mix","dog","nailtrimmings");
+    let pet3 = new Pet("Lucky", 4,"male","Angora","bunny","baths");
+    let pet4 = new Pet("Sheba",13,"female","tabby","cat","demattings");
     petSalon.pets.push(pet1,pet2,pet3,pet4);
 
 
     //displayCard()
     displayRow();
-    displayRow();
+    displayServiceCount();
 }
 
 window.onload=init; //wait to render the HTML, then load the init//

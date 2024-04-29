@@ -3,7 +3,7 @@
 /*header*/
 .site-header{
     display: flex;
-    background-image: url(../imgs/Fur\ Babies\ Beauty\ Salon\ header.png);
+    background-image: url(../imgs/dogs-cats.jpg);
     background-position: center center;
     flex-direction: column;
     justify-content: top;
@@ -45,8 +45,19 @@
     padding:3px;
 }
 
-label {
+option {
     color: rgb(46, 27, 6);
+    font-weight: bold;
+    display: inline-block;
+    width: 20%;
+    padding: 10px;
+    text-align:justify;
+    text-shadow: .3%;
+}
+
+
+label {
+    color: lightgoldenrodyellow;
     font-weight: bold;
     display: inline-block;
     width: 20%;
@@ -72,6 +83,16 @@ label {
     padding: 8px;
 }
 
+.info-bar{
+    color:lightgoldenrodyellow;
+    background-color: rgb(46, 27, 6);
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+
 .fa-trash{
     color: rgb(46, 27, 6);
     font-size: 12px;
@@ -81,11 +102,15 @@ label {
 
 }
 
-.info-bar{
-    color:lightgoldenrodyellow;
-    background-color: rgb(46, 27, 6);
-    padding: 5px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    border-radius: 5px;
+/*footer*/
+.site-footer{
+    background-image: url(../imgs/footer.jpg);
+    background-position: center center;
+    background-size: cover;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 90px;
+
 }

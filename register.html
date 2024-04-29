@@ -12,6 +12,8 @@
 <link rel="stylesheet" href="styles/index.css">
 <link rel="stylesheet" href="styles/display.css">
 
+<script src="https://kit.fontawesome.com/7156b4f5f0.js" crossorigin="anonymous"></script>
+
 <style>
     body{
         background-image: url(imgs/yellow-water-drop-background.jpg);
@@ -23,17 +25,22 @@
 </head>
 <body>
     <header class="site-header">
-        <div class="site-header-container">
-            <h1>Fur Baby Beauty Salon</h1>
+        <div class="site-header-container site-header-text">
+            <a href="Home.html">
+                <h1>Fur Baby Beauty Salon</h1>
+            </a>
             <nav>
-                <a href="index.html">Home</a>
+                <a href="Home.html">Home</a>
+                <a href="index.html">About Us</a>
+                <a href="services.html">Services</a>
                 <a href="register.html">Register</a>
+
             </nav>               
         </div>
-
     </header>
+
     <div id="notification" class="notification">
-        <span id="closeNotification">X</span>
+        <span id="closeNotification">&#9747;</span>
         <p id="notificationText">This is going to be dynamic text!</p>
 
 
@@ -63,17 +70,17 @@
         </div>
         <div>
             <label>Type of Pet:</label>
-            <input type="text" id="txtTypeOfPet">
+            <input type="text" id="txttypeofpet">
         </div>
         <div>
             <label>Service:</label>
-            <select id="textService">
-                <option value="hairCut">Hair Cut</option>
-                <option value="bath">Bath</option>
-                <option value="style">Style</option>
-                <option value="color">Color</option>
-                <option value="de-matting">De-Matting</option>
-                <option value="nailTrimming">Nail Trimming</option>
+            <select id="txtService">
+                <option value="hairCut">✂️Hair Cut</option>
+                <option value="bath">🛁Bath</option>
+                <option value="style">🪮Style</option>
+                <option value="color">🦄Color</option>
+                <option value="dematting">✨De-Matting</option>
+                <option value="nailTrimming">💅🏾Nail Trimming</option>
                 
             </select>
         </div>
@@ -82,19 +89,19 @@
 
         <button class="btn" onclick="register()">Register</button>
 
-        <div class="info-bar">
-            <label>Haircut :<span id="totalhaircusts"> 0 </span></label>
-            <label>Bath : <span id="totalbaths"> 0 </span></label>
-            <label>Style : <span id="totalstyles"> 0 </span></label>
-            <label>Color : <span id="totalColors"> 0 </span></label>
-            <label>de-matting :<span id="totaldemattings"> 0 </span></label>
-            <label>nailtrimming :<span id="totalnailtrimmings"> 0 </span></label>
+        <div class ="info-bar">
+            <label>✂️Haircut :<span id="totalhaircuts"> 0 </span></label>
+            <label>🛁Bath : <span id="totalbaths"> 0 </span></label>
+            <label>🪮Style : <span id="totalstyles"> 0 </span></label>
+            <label>🦄Color : <span id="totalcolors"> 0 </span></label>
+            <label>✨de-matting :<span id="totaldemattings"> 0 </span></label>
+            <label>💅🏾nailtrimming :<span id="totalnailtrimmings"> 0 </span></label>
         </div>
         
     <div id="pets"></div>
 
     <h3>Registered Pets</h3>
-    <table>
+    <table class="table table-striped">
         <thead>
             <tr>
                 <th>Name</th>
@@ -103,6 +110,7 @@
                 <th>Breed</th>
                 <th>Type of Pet</th>
                 <th>Service</th>
+                <th>Action</th>
                 
             </tr>
         </thead>
@@ -115,11 +123,25 @@
         </div>
     </main>
 
+    <footer class="site-footer">
+        <div>
+            <h1>
+                <a href="Home.html">Fur Baby Beauty Salon</a>
+            </h1>
+            <nav>
+                <a href="Home.html">Home</a>
+                <a href="index.html">About Us</a>
+    
+            </nav>  
+        </div>
+    
+    </footer>
+
 
     <script src="plugins/jquery3.7.1.js"></script>
-    <script src="./scripts/register.js"></script>
-    <script src="./scripts/display.js"></script>
     <script src="./scripts/notifications.js"></script>
+    <script src="./scripts/display.js"></script>
+    <script src="./scripts/register.js"></script>
 
 </body>
 </html>

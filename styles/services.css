@@ -1,7 +1,7 @@
 /*header*/
 .site-header{
     display: flex;
-    background-image: url(../imgs/Fur\ Babies\ Beauty\ Salon\ header.png);
+    background-image: url(../imgs/dogs-cats.jpg);
     background-position: center center;
     flex-direction: column;
     justify-content: top;
@@ -11,6 +11,7 @@
     text-align: center;
     text-decoration: underline;
 }
+
 
 
 
@@ -36,6 +37,29 @@
     text-align: right;
 }
 
+.flex-container-table{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    padding: 1%;
+    margin: 10px;
+}
+
+.border{
+    border: solid rgb(46, 27, 6);
+    border-radius: 15px;
+    margin: auto;
+
+}
+
+.container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50%;
+}
+
 .columns {
     float: left;
     width: 33.3%;
@@ -56,7 +80,7 @@
     color:lightgoldenrodyellow;
     background-color: rgb(46, 27, 6);
     padding: 5px;
-    margin-top: 30px;
+    margin-top: 500px;
     margin-bottom: 20px;
     border-radius: 5px;
 }
