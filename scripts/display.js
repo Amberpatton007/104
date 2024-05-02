@@ -31,8 +31,7 @@ function displayRow(){
                 <td>${pet.gender}</td>
                 <td>${pet.breed}</td>
                 <td>${pet.typeofpet}</td>
-                <td>${pet.service}</td>
-                <td>
+                <td>${pet.price}</td>
                 <button onclick="deletePet(${i});"<i class= "fa-solid fa-trash"></i></button>
                 </td>`;
 
@@ -53,6 +52,7 @@ function displayServiceCount(){
     let color=0;
     let dematting=0;
     let nailtrimmings=0;
+    let profits=0;
     //travel the array
     for(let i=0;i<petSalon.pets.length;i++){
         //get the current pet
@@ -75,6 +75,7 @@ function displayServiceCount(){
         if(pet.service.toLowerCase()=="nailtrimmings"){
             nailtrimmings++;
         }
+        profits=profits+pet.price
         
     }
         document.getElementById("totalhaircuts").innerHTML=haircuts;
@@ -83,4 +84,5 @@ function displayServiceCount(){
         document.getElementById("totalcolors").innerHTML=color;
         document.getElementById("totaldemattings").innerHTML=dematting;
         document.getElementById("totalnailtrimmings").innerHTML=nailtrimmings;
+        console.log(profits);
 }

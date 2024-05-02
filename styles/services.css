@@ -84,3 +84,18 @@
     margin-bottom: 20px;
     border-radius: 5px;
 }
+
+/*footer*/
+
+
+.site-footer{
+    background-image: url(../imgs/footer.jpg);
+    background-position-y: 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90px;
+    flex-direction: row;
+    justify-content: space-around;
+    color: goldenrod;
+    text-align: center;
+}

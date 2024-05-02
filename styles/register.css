@@ -103,14 +103,15 @@ label {
 }
 
 /*footer*/
+
 .site-footer{
     background-image: url(../imgs/footer.jpg);
-    background-position: center center;
+    background-position-y: 70%;
+    background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 60px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     height: 90px;
-
+    flex-direction: row;
+    justify-content: space-around;
+    color: goldenrod;
+    text-align: center;
 }

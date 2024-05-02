@@ -1,7 +1,7 @@
 function showNotification(msg,style){
     $("#notification").show();
     $("#notificationText").text(msg);
-    $("#notification").addclass(style);
+    $("#notification").addClass(style);
     setTimeout(hideNotification, 3000);
 
 }

@@ -51,6 +51,8 @@ img{
     font-weight: bolder;
 }
 
+
+
 #rcorners3 {
     border-radius: 25px;
     background: url(paper.gif);
@@ -66,20 +68,14 @@ img{
 
 /*footer*/
 
-#p1 {background-color:rgba(255, 205, 5, 0.893);}
-
 .site-footer{
     background-image: url(../imgs/footer.jpg);
-    background-position: center center;
+    background-position-y: 70%;
+    background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 600px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     height: 90px;
-
-}
-
-.img{
-    opacity: 0.5
+    flex-direction: row;
+    justify-content: space-around;
+    color: goldenrod;
+    text-align: center;
 }

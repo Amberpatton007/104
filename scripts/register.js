@@ -11,7 +11,7 @@ let petSalon = {
 }
 
 //constructor i.e. Bluprint//
-function Pet(name,age,gender,breed,typeofpet,service){
+function Pet(name,age,gender,breed,typeofpet,service,){
     //attributes-parameter//
     this.name=name;
     this.age=age;
@@ -19,6 +19,7 @@ function Pet(name,age,gender,breed,typeofpet,service){
     this.breed=breed;
     this.typeofpet=typeofpet;
     this.service=service;
+    this.price=getServicePrice(service)
 }
 
 function isValid(pet){
@@ -44,8 +45,9 @@ function register(){
     let inputBreed = document.getElementById("txtBreed").value;
     let inputtypeofpet = document.getElementById("txttypeofpet").value;
     let inputService = document.getElementById("txtService").value;
+
     
-    let newPet = new Pet(inputName,inputAge,inputGender,inputBreed,inputtypeofpet,inputService);
+    let newPet = new Pet(inputName,inputAge,inputGender,inputBreed,inputtypeofpet,inputService,inputPrice);
     
     if(isValid(newPet)==true){
         petSalon.pets.push(newPet); 
@@ -64,6 +66,35 @@ function deletePet(petID){
     displayServiceCount();
     showNotification("The pet has been deleted", "Error");
 
+}
+
+function getServices(){
+
+    //read the local sorage to get the services
+    let serviceList = readItems();
+    let option="";
+
+    //travel the array of the services
+    for(i-=0;i<serviceList.length;i++){
+        //creat the HTML <option> </option> element
+    option=`<option value="${serviceList[i].title}> ${serviceList[i].title} </option>`;    
+    $("#txtService").append(option);
+    //document.getElementbyId("txtservice").innerHTML=option;
+    }
+    //insert the services on the HTML
+}
+
+function getServicesPrice(serviceName){
+    let serviceList = readItems();
+    let price=0;
+
+    for(let i=0;i<serviceList.length;i++){
+        let service =serviceList[i];
+    if(serviceName.toLowerCase()==service.title.toLowerCase()){
+        price=service.price;
+    }
+}
+    return Number(price);
 }
 
 function init(){

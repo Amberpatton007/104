@@ -7,12 +7,12 @@ function Services(title, price){
 //validations
 function isValid(service){
     let validation=true;
-    if(services.title==""){
+    if(Services.title==""){
         validation=false
         alert("Please add service", "error");
     }
 
-    if(services.price==""){
+    if(Services.price==""){
         validation=false
         alert("Please add price", "error");
     }
@@ -23,7 +23,7 @@ function isValid(service){
 
     //register function
 function register(){
-    let inputService = document.getElementById("txtservice").value;
+    let inputService = document.getElementById("txtService").value;
     let inputPrice = document.getElementById("txtprice").value;
 
  //use notification   
